@@ -143,22 +143,12 @@ Systeme und Wissensmanagement, Universität Siegen
 \begin{acronym}
 % Format der Abkürzungsdefinition: \acro{}[]{}
 % {Verweis}[Abkürzung]{ausgeschriebene Abkürzung}
-\acro{cimawa}[CIMAWA]{Concept for the Imitiation of the Mental Ability of Word Association}
-\acro{edm}[EDM]{Entity Data Model}
-\acro{er}[ER]{Entity Relationship}
-\acro{fomc}[FOMC]{Federal Open Market Committee}
-\acro{hft}[HFT]{High Frequency Trading}
-\acro{linq}[LINQ]{Language Integrated Query}
-\acro{mef}[MEF]{Managed Extensibility Framework}
-\acro{mvc}[MVC]{Model View Controller}
-\acro{mvp}[MVP]{Model View Presenter}
-\acro{mvvm}[MVVM]{Model View ViewModel}
+
 \acro{nlp}[NLP]{Natural Language Processing}
-\acro{pos}[POS]{Part-of-Speech}
-\acro{ui}[UI]{User Interface}
-\acro{wpf}[WPF]{Windows Presentation Foundation}
-\acro{xaml}[XAML]{Extensible Application Markup Language}
-\acro{xml}[XML]{Extensible Markup Language}
+\acro{qa}[QA]{Question Answering}
+\acro{ir}[IR]{Information Retrieval}
+\acro{pos}[POS]{Part-of-speech}
+
 \end{acronym}
 \clearpage 
 \addcontentsline{toc}{chapter}{Formelverzeichnis} 
@@ -172,59 +162,59 @@ Systeme und Wissensmanagement, Universität Siegen
 
 
 \chapter{Question Answering Systeme}
-Das automatische Beantworten von Fragen mittels Computer, heißt Question Answering. Dabei werden die Fragen in natürlicher Sprache gestellt. Durch ein Interface (z.B. Texteingabe) geschieht diese Fragestellung. Durch die Verarbeitung dieser Eingabe, geschieht somit ein Dialog zwischen Mensch und Computer.
-\section{Geschichte der QA-Systeme}
-Die ersten Question Answering Systeme sind in den 60er-Jahren entstanden. Die ersten Systeme des QA's waren rein textbasiert und konnten einfach nur eine Frage parsen und die Antwort aus der passenden Stelle des Dokumentes wiedergeben. \citep{phillips1960question}.
+Das automatische Beantworten von Fragen mittels Computer heißt Question Answering. Dabei werden die Fragen in natürlicher Sprache gestellt. Durch ein Interface (z.B. Texteingabe) geschieht diese Fragestellung. Durch die Verarbeitung dieser Eingabe geschieht somit ein Dialog zwischen Mensch und Computer.
+\section{Geschichte der \ac{qa} Systeme}
+Die ersten Question Answering Systeme sind in den 60er-Jahren entstanden. Die ersten Systeme des \ac{qa}'s waren rein textbasiert und konnten einfach nur eine Frage parsen und die Antwort aus der passenden Stelle des Dokumentes wiedergeben \citep{phillips1960question}.
 
-Durch wissensbasierte Systeme entstand eine Alternative zu den textbasierten QA-Systemen. Die erste bekannte Ausführung solcher Systeme wurde entwickelt, um Fragen über Baseballspiele zu beantworten \citep{green1986baseball}. Es wurden strukturierte Daten einer Datenbank für Baseballspiele abgefragt. 
+Durch wissensbasierte Systeme entstand eine Alternative zu den textbasierten \ac{qa}-Systemen. Die erste bekannte Ausführung solcher Systeme wurde entwickelt, um Fragen über Baseballspiele zu beantworten \citep{green1986baseball}. Es wurden strukturierte Daten einer Datenbank für Baseballspiele abgefragt. 
 
-In der heutigen modernen Ausführung werden QA-Systeme auch hybrid, also mit beiden Ansätzen verwendet. IBM hat schließlich 2011 mit Watson an einer Fernsehsendung teilgenommen und dieses gewonnen. In dieser amerikanischen Fernsehsendung hat IBM Watson nicht nur rein textbasiert sondern auch wissensbasierte Abfragen gemacht und hatte somit mehrere Informationsquellen.
+In der heutigen modernen Ausführung werden \ac{qa}-Systeme auch hybrid, also mit beiden Ansätzen verwendet. IBM hat schließlich 2011 mit Watson an einer Fernsehsendung teilgenommen und dieses gewonnen. In dieser amerikanischen Fernsehsendung hat IBM Watson nicht nur rein textbasierte, sondern auch wissensbasierte Abfragen gemacht und hatte somit mehrere Informationsquellen.
 
 \section{Besonderheiten}
-QA-Systeme können eine Frage, die in natürlicher Sprache gestellt wird verarbeiten und eine Antwort in natürlicher Sprache zurückgeben. QA-Systeme können viel mehr als eine Keyword basierte Abfrage oder eine SQL ähnliche strukturierte Abfrage. Die Frage muss dabei nicht in einer Abfragesprache wie SQL gestellt werden, auch wird die Antwort nicht rein als lieferung der Ergebnisse angezeigt. Bei QA entsteht ein menschlischer Dialog. Durch \textbf{Information Retrieval} oder mittels einer \textbf{Wissensbasis} können Computer dazu verwendet werden, um Fragen zu beantworten.  
+\ac{qa}-Systeme können eine Frage, die in natürlicher Sprache gestellt wird verarbeiten und eine Antwort in natürlicher Sprache zurückgeben. \ac{qa}-Systeme können viel mehr als eine Keyword basierte Abfrage oder eine strukturierte Abfrage. Die Frage muss dabei nicht in einer Abfragesprache gestellt werden, auch wird die Antwort nicht rein als Lieferung der Ergebnisse angezeigt. Bei \ac{qa} entsteht ein menschlicher Dialog. Durch \textbf{Information Retrieval} oder mittels einer \textbf{Wissensbasis} können Computer dazu verwendet werden, um Fragen zu beantworten.  
 
-IR-basierten QA-Systeme holen zunächst die passende Passage aus einem passenden Dokument für eine gestellte Frage. Beim QA mittels Information Retrieval werden Texte und deren Passagen mit der gestellten Frage verglichen und somit eine Antwort generiert.
-Beim QA mittels einer Wissensbasis bekommt die Frage die gestellt wird eine Bedeutung. Diese Bedeutung kann nun für eine Abfrage von Datenbanken oder Fakten genutzt werden. Bei wissensbasierten QA-Systemen werden relationen in Datenbanken gespeichert und abgefragt. Das Wissen wird dann hergeleitet aus diesen Relationen. 
+\ac{ir}-basierte \ac{qa}-Systeme holen zunächst die passende Passage aus einem passenden Dokument für eine gestellte Frage. Beim \ac{qa} mittels Information Retrieval werden Texte und deren Passagen mit der gestellten Frage verglichen und somit eine Antwort generiert.
+Beim \ac{qa} mittels einer Wissensbasis bekommt die Frage, die gestellt wird, eine Bedeutung. Diese Bedeutung kann nun für eine Abfrage von Datenbanken oder Fakten genutzt werden. Bei wissensbasierten \ac{qa}-Systemen werden Relationen in Datenbanken gespeichert und abgefragt. Das Wissen wird dann hergeleitet aus diesen Relationen. 
 
-Eine weitere Form des QA ist, \textbf{Natural Language Processing QA} (NLP QA). Hierbei wird die verwendung der natürlichen Sprache und Methoden des maschinellen Lernens verwendet, um Antworten aus dem abgerufenen Textausschnitt zu extrahieren.
+Eine weitere Form des \ac{qa} ist \textbf{Natural Language Processing \ac{qa}} (\ac{nlp}  \ac{qa}). Hierbei wird die Verwendung der natürlichen Sprache und Methoden des maschinellen Lernens verwendet, um Antworten aus dem abgerufenen Textausschnitt zu extrahieren.
 
-Es ist auch eine Mischung der beiden Paradigmen möglich. DeepQA und IBM Watson arbeiten \textbf{hybrid}, beide Nutzen sowohl Text als auch Wissen, also unstrukturierte und strukturierte Daten, um Fragen noch besser zu beantworten.
-
-
+Es ist auch eine Mischung der beiden Paradigmen möglich. DeepQA und IBM Watson arbeiten \textbf{hybrid}, beide nutzen sowohl Text als auch Wissen, also unstrukturierte und strukturierte Daten, um Fragen noch besser zu beantworten.
 
 
 
-\section{Wie funktionieren QA-Systeme?}
-Die Daten durchlaufen bei QA folgende 3 Phasen:
+
+
+\section{Wie funktionieren \ac{qa}-Systeme?}
+Die Daten durchlaufen bei \ac{qa} folgende 3 Phasen:
 \begin{itemize}
-\item \textbf{Datenverarbeitung:} Durch NLP wird das geschriebene dem Computer verständlich gemacht. Dabei werden Neuronale Netzwerke werden aus Daten, Informationen, welche dann in Datenbanken abgebildet werden.
-\item \textbf{Fragenverarbeitung:} Die gestellte Frage wird hier in seine einzelnen Elemente zerlegt und es wird eine Struktur der Frage erzeugt.
-\item \textbf{Antwortenverarbeitung:} Durch abgleich der Informationen in der Datenbank und der festgestellten Frage wird dann versucht, eine Antwort zur gestellten Frage geben zu können.
+\item \textbf{Datenverarbeitung:} Durch \ac{nlp} wird das geschriebene dem Computer verständlich gemacht. Dabei werden aus Daten Informationen, welche dann in Datenbanken abgebildet werden.
+\item \textbf{Fragenverarbeitung:} Die Gestellte Frage wird hier in ihre einzelnen Elemente zerlegt und es wird eine Struktur der Frage erzeugt.
+\item \textbf{Antwortenverarbeitung:} Durch abgleich der Informationen in der Datenbank mit der erfassten Frage wird dann versucht, eine Antwort zur gestellten Frage zu generieren.
 \end{itemize}
 
 
 \chapter{Motivation und Zielsetzung}
-Persönliche Sprachassistenten wie der Google Assistant oder Amazon Alexa werden immer mehr gebraucht. Diese Sprachassistenten werden in Wohnorten platziert oder auch in Autos und Smartphones verwendet. Die Dienste, die diese Assistenten liefern ist dabei Vielfältig. Sie können andere Geräte steuern oder eine Frage zur Umgebung beantworten. Dies geschieht meistens über natürliche Sprache und in der Frage-Antwort-Form. Um unsere Fragen besser zu beantworten und bessere Antworten geben zu können, müssen solche Assistenten und Suchmaschinen unsere Sprache beherrschen. 
+Persönliche Sprachassistenten wie der Google Assistant oder Amazon Alexa werden immer mehr gebraucht. Diese Sprachassistenten werden in Wohnorten platziert oder auch in Autos und Smartphones verwendet. Die Dienste, die diese Assistenten liefern, sind dabei vielfältig. Sie können andere Geräte steuern oder eine Frage zur Umgebung beantworten. Dies geschieht meistens über natürliche Sprache und in der Frage-Antwort-Form. Um unsere Fragen besser zu beantworten und bessere Antworten geben zu können, müssen solche Assistenten und Suchmaschinen unsere Sprache beherrschen. 
 
-QA Systeme können auch gewerbliche und industrielle Probleme lösen. Unternehmen können mit Ihren Kunden zu jederzeit einfach kommunizieren oder in kürzester Zeit Informationen über ihr Lagerbestand haben. QA Systeme erleichtern die Informationssuche.
+\ac{qa} Systeme können auch gewerbliche und industrielle Probleme lösen. Unternehmen können mit ihren Kunden jederzeit einfach kommunizieren oder in kürzester Zeit Informationen über ihren Lagerbestand bekommen. \ac{qa} Systeme erleichtern die Informationssuche.
 
-Mit dieser Arbeit soll erforscht werden, wie in Zukunft bessere Verfahren für die Abfrage- und Antwort Prozesse von QA Systemen entwickelt werden können.
+Mit dieser Arbeit soll erforscht werden, wie in Zukunft bessere Verfahren für die Abfrage- und Antwort Prozesse von \ac{qa} Systemen entwickelt werden können.
 \\
 \\
 Das Ziel der Projektarbeit ist es, folgende Forschungsfragen zu beantworten:
 
  \begin{enumerate}
-    \item \textbf{F1} Welche unterschiedlichen Paradigmen für das QA gibt es?
-    \item \textbf{F2} Was sind die Vor- und Nachteile der QA Paradigmen?
-    \item \textbf{F3} Welche Methoden und Algorithmen ist für welches Paradigma geeignet?
-    \item \textbf{F4} Wie können QA Paradigmen am besten evaluiert werden?
+    \item \textbf{F1} Welche unterschiedlichen Paradigmen für das \ac{qa} gibt es?
+    \item \textbf{F2} Was sind die Vor- und Nachteile der \ac{qa} Paradigmen?
+    \item \textbf{F3} Welche Methoden und Algorithmen sind für welches Paradigma geeignet?
+    \item \textbf{F4} Wie können \ac{qa} Paradigmen am besten evaluiert werden?
   \end{enumerate}
 
 
 
 \chapter{Literaturrecherche}
 
-\section{NLP QA}
+\section{\ac{nlp} \ac{qa}}
 \begin{table}[H]
 \centering
 \resizebox{\textwidth}{!}{%
@@ -256,7 +246,7 @@ Semantic computation in a Chinese question-answering system                     
 \begin{tabular}[c]{@{}l@{}}The Use of Dynamic Segment Scoring for Language-Independent \\ Question Answering\end{tabular}                                                                 & \citep{Pack2001TheAnswering}                   \\ \hline
 \end{tabular}%
 }
-\caption{Ergebnisse der Literaturrecherche bezüglich des NLP QA}
+\caption{Ergebnisse der Literaturrecherche bezüglich des \ac{nlp} QA}
     \label{tab:tab1}
 \end{table}
 \section{Information Retrieval QA}
@@ -379,8 +369,8 @@ Question answering from structured knowledge sources                            
   
 \item Paradigmen des QA
     \begin{enumerate}
-    \item IR-basiert
-    \item NLP-basiert
+    \item \ac{ir}-basiert
+    \item \ac{nlp}-basiert
     \item Wissensbasiert
     \item Hybrid
   \end{enumerate}
@@ -401,25 +391,46 @@ Question answering from structured knowledge sources                            
 \chapter{Methodologie}
 
 
-Im wesentlichen soll mit der Projektarbeit eine Analyse über den Stand der Forschung im Bezug aus QA abgebildet werden.
+Im Wesentlichen soll mit der Projektarbeit eine Analyse des Standes der Forschung im Bezug auf \ac{qa} abgebildet werden.
 
 Im Abschnitt \textbf{1. Einleitung} soll erläutert werden, was die Motivation der Arbeit ist, was mit der Arbeit beantwortet werden soll und welche verwandten Arbeiten es schon gibt.
 
 Im Abschnitt \textbf{2. Question Answering} wird erklärt, was Question Answering ist, wie es funktioniert und was der Stand der Forschung ist.
 
-Im Abschnitt \textbf{3. Theoretische Grundlagen} für das QA wird von NLP und Machine Learning berichtet, da ohne Verständnis dieser, keine Analyse der Paradigmen möglich ist. Es wird im Kapitel 3 erklärt, was z.B. Stemming, Lemmatization, Named Entity Recognition, POS Tagging, oder Relation Finding ist. Auch werden Machine Learning Algorithmen wie Support Vector Machine oder Naive Bayes erklärt. 
+Im Abschnitt \textbf{3. Theoretische Grundlagen} für das \ac{qa} wird von \ac{nlp} und Machine Learning berichtet, da ohne Verständnis dieser keine Analyse der Paradigmen möglich ist. Es wird im Kapitel 3 erklärt, was z.B. Stemming, Lemmatization, Named Entity Recognition, \ac{pos} Tagging, oder Relation Finding ist. Auch werden Machine Learning Algorithmen wie Support Vector Machine oder Naive Bayes erklärt. 
 
-Nachdem die theoretischen Grundlagen erfasst wurden, werden die Ergebnisse der Literaturrecherche verwendet um die 4 Fragen (F1-F4) zu beantworten. Die Auswahl der Literatur erfolgt dann, wenn sie zu einer Forschungsfrage eine geeignete Antwort geben kann. Der Abschnitt \textbf{4. Paradigmen des QA} ist eine Wiedergabe der Paradigmen, die aus der gefundenen Literatur heraus entstehen. In diesem Abschnitt wird die erste Forschungsfrage F1 beantwortet.
+Nachdem die theoretischen Grundlagen erfasst wurden, werden die Ergebnisse der Literaturrecherche verwendet um die 4 Fragen (F1-F4) zu beantworten. Die Auswahl der Literatur erfolgt dann, wenn sie zu einer Forschungsfrage eine geeignete Antwort geben kann. Der Abschnitt \textbf{4. Paradigmen des \ac{qa}} ist eine Wiedergabe der Paradigmen, die aus der gesichtiten Literatur heraus entstehen. In diesem Abschnitt wird die erste Forschungsfrage F1 beantwortet.
 
-Das Wesen der Arbeit findet im Abschnitt \textbf{5. Analyse der Paradigmen des QA} statt. Hier werden die gewonnenen Erkenntnisse miteinander Verglichen. Die Forschungsfragen F2-F4 werden hier beantwortet.
-
-
+Der Kern der Arbeit befindet sich im Abschnitt \textbf{5. Analyse der Paradigmen des \ac{qa}}. Hier werden die gewonnenen Erkenntnisse miteinander verglichen. Die Forschungsfragen F2-F4 werden hier beantwortet.
 
 
 
+\chapter{Zeitplanung}
 
 
 
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Geplante Zeit} & \textbf{Thema}                       \\ \hline
+1 Woche       & Forschung Abschnitt 2       \\ \hline
+2 Wochen      & Abschnitt 2 schreiben       \\ \hline
+2 Wochen      & Forschung Abschnitt 3       \\ \hline
+2 Wochen      & Abschnitt 3                 \\ \hline
+2 Wochen      & Forschung Abschnitt 4       \\ \hline
+4 Wochen      & Abschnitt 4                 \\ \hline
+4 Wochen      & Abschnitt 5                 \\ \hline
+1 Woche       & Fazit, Einleitung, Abstract \\ \hline
+2 Wochen      & Korrektur                   \\ \hline
+2 Woche       & Puffer                      \\ \hline
+\textbf{22 Wochen}       &                       \\ \hline
+\end{tabular}%
+}
+\caption{Aufteilung der Aufgaben nach Zeit}
+    \label{tab:tab5}
+\end{table}
 
 
 
@@ -449,7 +460,7 @@ Hiermit versichere ich, dass ich die vorliegende Arbeit selbstständig verfasst 
 \linebreak
 \linebreak
 \linebreak
-.................................., den .........................\newline
+Bielefeld, den 01.04.2020\newline
 (Ort) (Datum)\newline
 \linebreak
 \linebreak
